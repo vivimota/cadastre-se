@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 90vh;
+    width: 90vw;
+    background-image: url(cactocerto.png);
+    background-color: rgb(173, 226, 173);
+
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 80vh;
+    width: 50vw;
+    background-color: rgb(90, 238, 90);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px;
+    font-variant: small-caps;
+}
+
+div{
+    display: flex;
+    background-color: rgb(90, 238, 90);
+}
+
+
+div.formulario{
+    margin-left: 30px;
+    line-height: 1.2em;
+}
+
+label{
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+    border-color:  rgba(90, 238, 90, 0.486);
+    background-color:rgba(90, 238, 90, 0.486);
+    border-bottom-color: rgb(5, 66, 66);
+    width: 200px;
+}
+
+input:hover{
+    background-color: lightgray;
+}
+
+input.botao{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 100px;
+    background-color: rgb(126, 233, 233);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input.botao:hover{
+    background-color: lightgray;
+}
+
+@media (max-width:600px){
+    img{
+        display: none;
+    }
+
+    main{
+        width: 300px;
+    }
+}
